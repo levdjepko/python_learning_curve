@@ -12,5 +12,5 @@ for i in range(int(time)):
 # show the result    
 print (totalAmount)   
 monthlyAmount = totalAmount * 0.04/12
-print ('Monthly is ' + '{0:.2f}'.format(monthlyAmount))
-print (int(30 * 8000 * 0.01))
+print ('Monthly this is ' + '{0:.2f}'.format(monthlyAmount))
+
