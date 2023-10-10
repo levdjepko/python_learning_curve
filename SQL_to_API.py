@@ -17,7 +17,7 @@ from sqlalchemy.engine import URL
 drivername = 'mssql+pyodbc'
 server = 'sqldatamart'
 database = 'datamart'
-api_token = 'btg9Jd5HhpPfyH15cSGfvUhA_kWVa9ec4uhomzFjwxDg2DgiSOTCApnt1Pr5Djk7MSAmdo7Cg7_pM9IZYE2ZMg'
+api_token = ###
 driver = 'ODBC Driver 17 for SQL Server'
 trusted_connection = 'yes'
 
