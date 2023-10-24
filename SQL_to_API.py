@@ -17,7 +17,7 @@ from sqlalchemy.engine import URL
 drivername = 'mssql+pyodbc'
 server = 'sqldatamart'
 database = 'datamart'
-api_token = ###
+api_token = 'btg9Jd5HhpPfyH15cSGfvUhA_kWVa9ec4uhomzFjwxDg2DgiSOTCApnt1Pr5Djk7MSAmdo7Cg7_pM9IZYE2ZMg'
 driver = 'ODBC Driver 17 for SQL Server'
 trusted_connection = 'yes'
 
@@ -53,14 +53,26 @@ if server is None or database is None or api_token is None:
 dbEngine = create_engine(connect_url)
 connection = dbEngine.connect()
 if (connection):
-    print ('Connection succesful')
+    print ('Connection to the database was succesful')
 
 
 # SQL -- Connect to the DB and get the result of SELECT query
 # get the first row from the table
-tableResultSQL = pd.read_sql("SELECT top 101 * from OtterbotCBSPopulationView WHERE GradYear IN ( '2023-2024')",  connection) 
+tableResultSQL = pd.read_sql("SELECT * from OtterbotCBSPopulationView WHERE GradYear IN ('2023-2024') EXCEPT SELECT * FROM Projects.dbo.OtterbotCBSPopulationView_backup_10132023 WHERE GradYear IN ('2023-2024')",  connection) 
 #print (tableResult)
 df = pd.DataFrame(tableResultSQL)
+
+# replace nulls in LastReportedGPA column with 0.0
+#df["LastReportedGPA"].fillna("0.0", inplace=True)
+
+# drop rows with nulls in LastReportedGPA column
+#df.dropna(subset=["LastReportedGPA"], inplace=True)
+
+#df.drop(columns=["CBSPledgeID"], inplace=True) # TODO - is that OKAY?
+
+# drop duplicates in the 'OtterbotContactID' column
+# duplicates in the 'phone' column are not allowed - they break the import
+df.drop_duplicates(subset=["Phone"], inplace=True)
 
 #   4. REMAP COLUMNS
 conv_dict = {
@@ -121,7 +133,7 @@ for d in data:
         if "custom" not in key.lower():
             # check for NaN values needed?
             temp[key] = value
-        else:
+        else:            
             temp["custom"][key[7:]] = value # key[7:] is to get rid of "custom." portion of keys
     output.append(temp)  
 print ("After for loop:")
