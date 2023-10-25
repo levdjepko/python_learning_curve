@@ -58,7 +58,12 @@ if (connection):
 
 # SQL -- Connect to the DB and get the result of SELECT query
 # get the first row from the table
-tableResultSQL = pd.read_sql("SELECT * from OtterbotCBSPopulationView WHERE GradYear IN ('2023-2024') EXCEPT SELECT * FROM Projects.dbo.OtterbotCBSPopulationView_backup_10132023 WHERE GradYear IN ('2023-2024')",  connection) 
+tableResultSQL = pd.read_sql(" SELECT top 200 * from OtterbotCBSPopulationView WHERE GradYear IN ('2022-2023')",  connection )
+# tableResultSQL = pd.read_sql("SELECT * from OtterbotCBSPopulationView " + 
+#                              "WHERE GradYear IN ('2022-2023') " +
+#                              "EXCEPT  " +
+#                              "select * from OtterbotCBSPopulationView_UPLOADED " +
+#                              "WHERE GradYear IN ('2022-2023')",  connection) 
 #print (tableResult)
 df = pd.DataFrame(tableResultSQL)
 
@@ -148,5 +153,15 @@ headers = {"Content-type": "application/json",
 "Authorization": "APIToken " + api_token}
 
 response = requests.post(url, headers=headers, json=output)
+# 6. IF THE LOAD WAS SUCCESSFUL, COPY THE TABLE INTO THE 'UPLOADED' TABLE
 print (response)
-
+if (response.ok):
+    print ("Data has been loaded")
+    # we need to make sure that the data is replaced in the 'uploaded' table
+    # so that we don't upload the same data again next week
+    # execute a SQL statement
+    cursor = connection.cursor()
+    cursor.execute("DROP TABLE OtterbotCBSPopulationView_UPLOADED")
+    cursor.execute("SELECT * INTO OtterbotCBSPopulationView_UPLOADED " +            
+    "FROM OtterbotCBSPopulationView")
+    print ("Data has been copied to the 'UPLOADED' table")
