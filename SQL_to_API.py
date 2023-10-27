@@ -54,11 +54,11 @@ dbEngine = create_engine(connect_url)
 connection = dbEngine.connect()
 if (connection):
     print ('Connection to the database was succesful')
-
+    
 
 # SQL -- Connect to the DB and get the result of SELECT query
 # get the first row from the table
-tableResultSQL = pd.read_sql(" SELECT top 200 * from OtterbotCBSPopulationView WHERE GradYear IN ('2022-2023')",  connection )
+tableResultSQL = pd.read_sql(" SELECT top 300 * from OtterbotCBSPopulationView WHERE GradYear IN ('2022-2023')",  connection )
 # tableResultSQL = pd.read_sql("SELECT * from OtterbotCBSPopulationView " + 
 #                              "WHERE GradYear IN ('2022-2023') " +
 #                              "EXCEPT  " +
@@ -153,6 +153,7 @@ headers = {"Content-type": "application/json",
 "Authorization": "APIToken " + api_token}
 
 response = requests.post(url, headers=headers, json=output)
+
 # 6. IF THE LOAD WAS SUCCESSFUL, COPY THE TABLE INTO THE 'UPLOADED' TABLE
 print (response)
 if (response.ok):
@@ -160,8 +161,18 @@ if (response.ok):
     # we need to make sure that the data is replaced in the 'uploaded' table
     # so that we don't upload the same data again next week
     # execute a SQL statement
+    connection = pyodbc.connect(f"DRIVER={{SQL Server}};SERVER={server};DATABASE={database}")
     cursor = connection.cursor()
+
     cursor.execute("DROP TABLE OtterbotCBSPopulationView_UPLOADED")
     cursor.execute("SELECT * INTO OtterbotCBSPopulationView_UPLOADED " +            
-    "FROM OtterbotCBSPopulationView")
+    "FROM OtterbotCBSPopulationView WHERE GradYear IN ('2022-2023')")
     print ("Data has been copied to the 'UPLOADED' table")
+
+    # commit the transaction
+    connection.commit()
+    # close the cursor and connection
+    cursor.close()
+    connection.close()
+
+# 7 . Cleanup
