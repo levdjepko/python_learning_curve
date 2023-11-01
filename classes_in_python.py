@@ -1,5 +1,5 @@
 
-# define a class
+# define a Class
 class Dog:
     def __init__(self, name, breed):
         self.name = name
@@ -8,7 +8,6 @@ class Dog:
         print ('Woof!')    
 
 # Main
-
 # instantiate an object from the class
 my_dog = Dog('Spot', 'Shepard')       
 print (my_dog.name)
