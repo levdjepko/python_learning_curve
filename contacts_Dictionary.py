@@ -1,11 +1,11 @@
 contacts = {
-    'number' :4,
+    'number':4,
     'students':
     [
         {'name':'Sarah Connor', 'email':'sarah@example.com'},
         {'name':'Harry Potter', 'email':'harryp@example.com'},
         {'name':'John Connor', 'email':'johny@example.com'},
-        {'name':'Ronald McDonald', 'email':'MCD@example.com'}
+        {'name':'Ronald McDonald', 'email':'McD@example.com'}
     ]
 }
 
