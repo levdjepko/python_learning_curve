@@ -1,5 +1,5 @@
 # find out how many decades old is the person
 age = int(input( 'How old are you?\n' ))
-decades = age // 10
+decades = age // 10 # integer division
 remainder = age % 10
 print ('You are ' + str(decades) + ' decades old, and ' + str(remainder) + ' years old')
