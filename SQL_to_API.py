@@ -2,6 +2,7 @@
 # from OtterbotCbsPopulationView
 # for grad years = current year, and current year + 1, 
 # and upload all the data  to the Otterbot
+# has been updated with a little bit revised logic
 
 import json
 import os
