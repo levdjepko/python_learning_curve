@@ -1,5 +1,5 @@
 # there is an open API that gets the people who are currently in space
-# we need to use an HTTP request to this open API
+# we need to use an HTTP request to this open API:
 
 import requests
 
