@@ -1,4 +1,4 @@
-text = 'Hello World'
+text = 'CipherMe'
 shift = 3
 
 def caesar(message, offset):
@@ -12,8 +12,8 @@ def caesar(message, offset):
             index = alphabet.find(char)
             new_index = (index + offset) % len(alphabet)
             encrypted_text += alphabet[new_index]
-    print('plain text:', message)
-    print('encrypted text:', encrypted_text)
+    print ('plain text:', message)
+    print ('encrypted text:', encrypted_text)
 
 caesar(text, shift)
 caesar(text, 13)
