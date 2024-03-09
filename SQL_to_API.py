@@ -1,6 +1,6 @@
 # we will essentially need to pull the same report 
 # from OtterbotCbsPopulationView
-# for grad years = current year, and current year + 1, 
+# for grad years = current year, and current year + 1, +2, +3
 # and upload all the data  to the Otterbot
 # has been updated with a little bit revised logic
 
@@ -59,7 +59,7 @@ if (connection):
 
 # SQL -- Connect to the DB and get the result of SELECT query
 # get the first row from the table
-tableResultSQL = pd.read_sql(" SELECT top 300 * from OtterbotCBSPopulationView WHERE GradYear IN ('2022-2023')",  connection )
+tableResultSQL = pd.read_sql(" SELECT * from OtterbotCBSPopulationView WHERE GradYear IN ('2022-2023')",  connection )
 # tableResultSQL = pd.read_sql("SELECT * from OtterbotCBSPopulationView " + 
 #                              "WHERE GradYear IN ('2022-2023') " +
 #                              "EXCEPT  " +
