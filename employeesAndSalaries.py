@@ -24,7 +24,7 @@ class Company:
 
 def main():
     my_company = Company()
-
+    # set salaries
     employee1 = Employee('Sarah', 'Hess', 50000)
     my_company.add_employee(employee1)
     employee2 = Employee('Lee', 'Lo', 10000)
