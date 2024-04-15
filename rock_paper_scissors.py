@@ -1,3 +1,4 @@
+# a simple rock-paper-scissors game
 import random
 
 computer_choice =random.choice(['scissors', 'rock', 'paper'])
