@@ -6,14 +6,8 @@ import random
 import re
 import sys
 
-#
-# Complete the 'timeConversion' function below.
-#
-# The function is expected to return a STRING.
-# The function accepts STRING s as parameter.
-#
-
 def timeConversion(s):
+    
     # format the string
     # from AM/PM format to military time
     hour=int(s[:2])
