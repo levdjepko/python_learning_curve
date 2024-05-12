@@ -1,4 +1,4 @@
-# send the post request with an array of data
+#  send the post request with an array of data
 headers = {"W-Token": "Ilovemyboss"}
 data = [
     {
