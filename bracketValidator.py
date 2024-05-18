@@ -6,12 +6,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'isBalanced' function below.
-#
-# The function is expected to return a STRING.
-# The function accepts STRING s as parameter.
-#
 
 def isBalanced(s):
     # Write your code here
