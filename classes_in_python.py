@@ -6,8 +6,6 @@ class Dog:
     def bark(self):
         print ('Woof!')    
 
-# Main
-
 # instantiate an object from the class
 my_dog = Dog('Spot', 'Shepard')       
 print (my_dog.name)
