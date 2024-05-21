@@ -1,4 +1,4 @@
-# get user inputs
+# get the user inputs
 initialAmount = input ('Enter the initial investement amount\n')
 time = input ('Enter the time in month for this investement\n')
 additionalMonthly = input ('Enter the amount of monthly investment\n')
