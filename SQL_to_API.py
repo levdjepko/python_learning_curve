@@ -33,7 +33,6 @@ trusted_connection = 'yes'
 # print(json.dumps(response))
 
 
-
 #   1. CONNECT TO THE DATABASE ( DATAMART )
 # Create connection URL
 connect_url = URL.create(
