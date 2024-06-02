@@ -8,6 +8,7 @@ import sys
 
 
 def isBalanced(s):
+    
     # Write your code here
     # for i in range(0, len(s)//2):
     #     if (s[i] == '(' and s[len(s)-1-i] == ')') or (s[i] == '[' and s[len(s)-1-i] == ']') or (s[i] == '{' and s[len(s)-1-i] == '}'):
