@@ -160,7 +160,7 @@ response = requests.post(url, headers=headers, json=output)
 print (response)
 if (response.ok):
     print ("Data has been loaded")
-    # we need to make sure that the data is replaced in the 'uploaded' table
+    # We need to ensure that the data is replaced in the 'uploaded' table
     # so that we don't upload the same data again next week
     # execute a SQL statement
     connection = pyodbc.connect(f"DRIVER={{SQL Server}};SERVER={server};DATABASE={database}")
