@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import math
 import os
 import random
@@ -8,7 +6,7 @@ import sys
 
 
 def twoArrays(k, A, B):
-    # permute the arrays A and B to get the sums of each pair A[i]+B[i] >= k if that's possible
+    # Permute the arrays A and B to get the sums of each pair A[i]+B[i] >= k if that's possible
     A.sort()
     B.sort(reverse=True)
     
