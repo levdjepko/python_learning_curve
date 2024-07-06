@@ -1,4 +1,3 @@
-#!/bin/python3
 
 import math
 import os
@@ -11,8 +10,7 @@ def timeConversion(s):
     # format the string
     # from AM/PM format to military time
     hour=int(s[:2])
-    timeOfDay=s[8:]
-    
+    timeOfDay=s[8:]    
         
     if timeOfDay == 'PM':
         if hour != 12:  # 12 pm = 12:00
