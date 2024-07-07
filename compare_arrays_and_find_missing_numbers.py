@@ -1,9 +1,9 @@
 def missingNumbers(arr, brr):
     missing_items = []
     arr.sort()
-    brr.sort()
-    
+    brr.sort()    
     index = 0
+    
     for i in range(len(brr)):
         if brr[i] == arr[index]:
             index += 1
