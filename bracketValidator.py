@@ -15,8 +15,8 @@ def isBalanced(s):
     #         continue
     #     else:
     #         return 'NO'
-    # stuff above doesn't work because the secription of the problem is flawed.
-    # we might want to just add items to the array as we go, and pop them as we see the matching parenthesis
+    # stuff above doesn't work because the description of the problem is flawed.
+    # We might want to just add items to the array as we go, and pop them as we see the matching parenthesis
     brackets = []
     
     if (len(s)) == 1:
