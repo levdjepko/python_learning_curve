@@ -6,6 +6,7 @@
 
 
 def minimumNumber(n, password):
+    
     # Return the minimum number of characters to make the password strong
     numbers = "0123456789"
     lower_case = "abcdefghijklmnopqrstuvwxyz"
@@ -27,10 +28,10 @@ def minimumNumber(n, password):
         if password[i] in numbers:
             print("number")
             has_number = 1
-    # add required symbols to the pasword
+    # Add required symbols to the pasword
     addition = 4 - (has_special_character + has_uppercase + has_lowercase + has_number)
     
-    # if the password is still too short, pad it with some more symbols
+    # If the password is still too short, pad it with some more symbols
     if len(password) + addition < 6:
         padding = 6 - len(password) - addition
         
