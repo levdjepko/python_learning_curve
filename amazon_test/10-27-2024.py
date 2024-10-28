@@ -1,6 +1,8 @@
 ''' Two questions were asked - the signal like [1,2,3,4,5] that needs to be sent via channels (e.g. 2 of them) such that we have the largest sum of medians of the arrays. 
-Solution was to sort the array in descending order, then to use channels - 1 elements of them, and then calculate the rest of the elements in the reaminign channel, while also calculating its median.
+The solution was to sort the array in descending order, then to use channels - 1 element of them, and then calculate the rest of the elements in the remaining channel, while also calculating its median.
 #
-The other question was about the amazon delivery and warehouses, it had an array of places where the deliveries must be performed, and d = x distance of max delivery distance
+The other question was about Amazon delivery and warehouses, it had an array of places where the deliveries must be performed, and d = x distance of max delivery distance
 '''
 # solved 1 14/15 (weird case 7) and 2 15/15
+
+# next piece was an invitation to a "Virtual Interview" on 10/28/2024
