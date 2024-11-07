@@ -1,6 +1,7 @@
 def balancedSums(arr):
     # find an element in the array such that sum of elements to the left and to the right equals
     # if that's the case, return 'yes', otherwise 'no'
+    
     sum_of_all_elements = sum(arr)
     if len(arr) == 1:
         return 'YES'
