@@ -4,7 +4,6 @@ import random
 import re
 import sys
 
-
 def closestNumbers(arr):
     arr.sort()
     smallest_diff = arr[1] - arr[0]
