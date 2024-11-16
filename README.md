@@ -6,6 +6,8 @@ A lot of code here is from Hackerrank or Leetcode
 
 I also put in some stuff to work with APIs using Python, Pandas, etc.
 
-Some of the stuff is from freecodecamp.org - I am a supporter of their mission for the last three years :)
+Some of the stuff is from freecodecamp.org - I have been a supporter for the last three years :)
 
-Many tasks are solved puzzles from https://www.hackerrank.com/interview/preparation-kits
+Many tasks are solved puzzles from https://www.hackerrank.com/interview/preparation-kits.
+
+Also, some of the items are from Amazon-like lists from Leetcode
