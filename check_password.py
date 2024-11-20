@@ -1,3 +1,4 @@
+# this is a password checked app
 # Its length is at least 6
 # It contains at least one digit.
 # It contains at least one lowercase English character.
