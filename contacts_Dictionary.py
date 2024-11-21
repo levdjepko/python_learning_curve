@@ -6,7 +6,8 @@ contacts = {
         {'name':'Sarah Connor', 'email':'sarah@example.com'},
         {'name':'Harry Potter', 'email':'harryp@example.com'},
         {'name':'John Connor', 'email':'johny@example.com'},
-        {'name':'Ronald McDonald', 'email':'McD@example.com'}
+        {'name':'Ronald McDonald', 'email':'McD@example.com'},
+        {'name':'John Johny', 'email':'jj@johnys.com'}
     ]
 }
 print('Student emails:')
