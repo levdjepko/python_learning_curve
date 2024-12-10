@@ -11,3 +11,5 @@ Some of the stuff is from freecodecamp.org - I have been a supporter for the las
 Many tasks are solved puzzles from https://www.hackerrank.com/interview/preparation-kits.
 
 Also, some of the items are from Amazon-like lists from Leetcode
+
+A few solutions were following neetcode
