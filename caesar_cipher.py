@@ -1,5 +1,5 @@
 text = 'CipherMe'
-shift = 3
+offset = 3
 
 def caesar(message, offset):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -14,5 +14,5 @@ def caesar(message, offset):
     print ('plain text:', message)
     print ('encrypted text:', encrypted_text)
 
-caesar(text, shift)
+caesar(text, offset)
 caesar(text, 13)
