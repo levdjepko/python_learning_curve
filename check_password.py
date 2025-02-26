@@ -29,7 +29,7 @@ def minimumNumber(n, password):
         if password[i] in numbers:
             print("number")
             has_number = 1
-    # Add required symbols to the pasword
+    # Add required symbols to the password
     addition = 4 - (has_special_character + has_uppercase + has_lowercase + has_number)
     
     # If the password is still too short, pad it with some more symbols
