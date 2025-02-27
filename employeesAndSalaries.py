@@ -24,12 +24,12 @@ class Company:
 
 def main():
     my_company = Company()
-    # set salaries
+    # Set salaries
     employee1 = Employee('Sarah', 'Hess', 50000)
     my_company.add_employee(employee1)
     employee2 = Employee('Lee', 'Lo', 10000)
     my_company.add_employee(employee2)
-    employee3 = Employee('Lev', 'Dzhepko', 80000)
+    employee3 = Employee('Lev', 'Dzhepko', 99000)
     my_company.add_employee(employee3)
 
     my_company.display_employees()
