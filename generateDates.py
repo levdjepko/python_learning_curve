@@ -1,5 +1,6 @@
 from datetime import datetime
 
+# This procedure generates valid academic years
 def generate_grad_years_string():
     currentYear = datetime.now().year
     nextYear = currentYear + 1
