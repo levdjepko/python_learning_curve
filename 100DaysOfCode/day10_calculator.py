@@ -20,3 +20,4 @@ n2 = float(input("Second number: \n"))
 
 result = operations[operator](n1, n2)
 print(result)
+# todo: add the logic to make it work inside the loop
