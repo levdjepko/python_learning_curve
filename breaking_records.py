@@ -13,7 +13,8 @@ def breakingRecords(scores):
     '''
     min_count = max_count = 0
     max_score = min_score = scores[0]
-    
+
+    # loop through the scores list
     for i in range(1, len(scores)):
         if scores[i] > max_score:
             # new high record
