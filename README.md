@@ -1,8 +1,8 @@
 # python_learning_curve
 
-It is just a place to keep some interesting Python solutions and snippets :)
+It is just a place to keep some interesting Python code and functions :)
 
-A lot of code here is from Hackerrank or Leetcode
+A lot of the code here is from Hackerrank or Leetcode
 
 I also put in some stuff to work with APIs using Python, Pandas, etc.
 
