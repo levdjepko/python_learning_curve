@@ -24,15 +24,6 @@ api_token = 'TOKEN'
 driver = 'ODBC Driver 17 for SQL Server'
 trusted_connection = 'yes'
 
-# url = "https://api.admithub.com/contacts/5555556"
-# headers = {'content-type': 'application/json',
-# 'Authorization': 'APIToken ' + api_token}
-
-# response = requests.get(url, headers=headers).json()
-
-# print(json.dumps(response))
-
-
 #   1. CONNECT TO THE DATABASE ( DATAMART )
 # Create connection URL
 connect_url = URL.create(
