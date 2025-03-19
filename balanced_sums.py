@@ -1,4 +1,5 @@
 def balancedSums(arr):
+    
     # find an element in the array such that the sum of elements to the left and to the right equals
     # If that's the case, return 'yes', otherwise 'no'
     
