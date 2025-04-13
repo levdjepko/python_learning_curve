@@ -1,10 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        # create a stack and push the string we encounter
+        # create a stack and push the string we encounter, char by char
         stack = []
         parentheses = ['(', ')', '[', ']', '{', '}']
         for char in s:
-            # check each character in a string
+            # Check each character in a string
             if char in parentheses and char in ['(', '[', '{']:
                 # opening brackets
                 stack.append(char)
@@ -15,7 +15,7 @@ class Solution:
                     return False
             else:
                 return False        
-        # if at this point we pushed and popped each character in correct order, the string is a valid code
+        # if at this point we pushed and popped each character in the correct order, the string is a valid code
         if len(stack) == 0:
             return True
         return False                
