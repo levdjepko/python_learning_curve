@@ -1,3 +1,4 @@
+# assign the increment
 $i = 1
 $doneDir = ".\done" # Define the name of the subdirectory
 
