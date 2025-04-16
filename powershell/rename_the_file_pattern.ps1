@@ -2,7 +2,7 @@
 .SYNOPSIS
 Renames files in the current directory based on a specific pattern.
 It replaces the part of the filename before the last underscore with a fixed prefix,
-while keeping the part after the last underscore.
+while keeping the part after the previous underscore.
 
 .DESCRIPTION
 This script iterates through files in the current directory. For each file, it finds
@@ -16,10 +16,6 @@ PS C:\Path\To\Files> .\Rename-Script.ps1
 If a file named "Controller Shift Handover_2311050901.log" exists, it will be
 renamed to "SH ID_ Title_SH Controller Date_2311050901.log".
 
-.NOTES
-Author: Gemini
-Date: 2025-04-15
-Version: 1.0
 Always test with the -WhatIf parameter on Rename-Item before running for real!
 #>
 
