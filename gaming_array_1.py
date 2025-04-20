@@ -1,6 +1,5 @@
 def gamingArray(arr):
-    # find the max element in the array and remove everything to the right of it
-    # OPTIMIZED FOR EFFICIENCY. See history for the first version!
+    
     pick_counter = 0
     max_element = 0
     
