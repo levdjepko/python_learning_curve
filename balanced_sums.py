@@ -1,6 +1,6 @@
 def balancedSums(arr):
     
-    # find an element in the array such that the sum of elements to the left and to the right equals
+    # Find an element in the array such that the sum of elements to the left and the right equals
     # If that's the case, return 'yes', otherwise 'no'
     
     sum_of_all_elements = sum(arr)
@@ -10,7 +10,7 @@ def balancedSums(arr):
     left = 0
     right = sum_of_all_elements
     for i in range(len(arr)):
-        # track the sum before and after the current element
+        # Track the sum before and after the current element
         if i >= 1:
             left += arr[i - 1]
         right -= arr[i]
