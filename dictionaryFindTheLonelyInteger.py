@@ -6,11 +6,8 @@ import random
 import re
 import sys
 
-# #
-# #
+
 #  Given an array of integers, where all elements but one occur twice, find the unique element.
-# #
-# #
 
 def lonelyinteger(a):    
     # we can iterate over this array with a hashset or hashmap
