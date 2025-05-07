@@ -9,11 +9,9 @@ import sys
 #
 # Complete the 'miniMaxSum' function below.
 #
-# The function accepts INTEGER_ARRAY arr as parameter.
-#
 
 def miniMaxSum(arr):
-    arr.sort()   # O(n log(n))
+    arr.sort()   # O(n log(n)) complexity
     print(sum(arr) - arr[len(arr) - 1], sum(arr) - arr[0])
     
 
