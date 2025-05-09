@@ -9,6 +9,8 @@
 def minimumNumber(n, password):
     
     # Return the minimum number of characters to make the password strong
+
+    # the choices for the passwords
     numbers = "0123456789"
     lower_case = "abcdefghijklmnopqrstuvwxyz"
     upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
