@@ -1,7 +1,7 @@
 
 def formingMagicSquare(s):
-    # find the magic square cost:
-    # these are all possible values for magic squares between 1 and 9
+    # Find the magic square cost:
+    # These are all possible values for magic squares between 1 and 9
     magic_squares = [
         [[8, 1, 6], [3, 5, 7], [4, 9, 2]],
         [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
