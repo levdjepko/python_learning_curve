@@ -1,3 +1,4 @@
+# using the random module, do some coin flips
 import random
 
 count_heads = 0
