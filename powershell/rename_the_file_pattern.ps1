@@ -11,12 +11,6 @@ of the predefined prefix "SH ID_ Title_SH Controller Date_" followed by the orig
 part of the filename that came after the last underscore. It then renames the file.
 Files without an underscore or ending in an underscore are skipped.
 
-.EXAMPLE
-PS C:\Path\To\Files> .\Rename-Script.ps1
-If a file named "Controller Shift Handover_2311050901.log" exists, it will be
-renamed to "SH ID_ Title_SH Controller Date_2311050901.log".
-
-Always test with the -WhatIf parameter on Rename-Item before running for real!
 #>
 
 # --- Configuration ---
@@ -66,5 +60,5 @@ Get-ChildItem -File | ForEach-Object {
 
 Write-Host "------------------------------------"
 Write-Host "Script finished."
-Write-Host "Review the output above. If using -WhatIf, no changes were made."
-Write-Host "Remove '-WhatIf' from the Rename-Item command to perform actual renaming."
+
+
