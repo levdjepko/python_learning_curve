@@ -1,4 +1,4 @@
-text = 'CipherMe'
+text = 'EncodeMe'
 offset = 3
 
 def caesar(message, offset):
