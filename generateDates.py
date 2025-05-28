@@ -1,6 +1,7 @@
 from datetime import datetime
 
 # This procedure generates valid academic years
+# it assumes the MS SQL syntax
 def generate_grad_years_string():
     currentYear = datetime.now().year
     nextYear = currentYear + 1
@@ -17,9 +18,9 @@ def generate_grad_years_string():
     return grad_years
   
 grad_years = generate_grad_years_string()
-sqlQuery = "SELECT * from OtterbotCBSPopulationView \
+sqlQuery = "SELECT * from VIEW \
             WHERE GradYear IN (" + grad_years + ") \
             EXCEPT \
-            SELECT * FROM staging.OtterbotCBSPopulationUPLOADED \
+            SELECT * FROM staging.VIEW \
             WHERE GradYear IN (" + grad_years + ") "
 print(sqlQuery)
