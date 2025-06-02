@@ -1,6 +1,6 @@
-# Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
-#
-#
+''' 
+Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+'''
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         # dictionary
@@ -14,7 +14,7 @@ class Solution:
                 print (items[nums[i]])
             else:
                 # already existing item in the dictionary
-                # every item appears exactly twice, at most, per description
+                # Every item appears exactly twice, at most, per description
                 items[nums[i]] = 2
         # return the only index with 1 in value
         for i in range(len(nums)):
