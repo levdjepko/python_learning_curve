@@ -7,18 +7,17 @@ import re
 import sys
 
 
-# 
-# Given a square matrix, calculate the absolute difference between the sums of its diagonals.
-#
+'''
+# Given a square matrix, calculate the absolute difference between its diagonals.
+'''
 
 def diagonalDifference(arr):
-    firstDiagonal = secondDiagonal = 0
-    
+    firstDiagonal = secondDiagonal = 0    
     #print(arr)
     for i in range(len(arr)):
-        firstDiagonal+= arr[i][i]
+        firstDiagonal += arr[i][i]
         #print("First:", arr[i][i])
-        secondDiagonal+= arr[i][len(arr)- i - 1]
+        secondDiagonal += arr[i][len(arr)- i - 1]
         #print("Second:", arr[i][len(arr)- i - 1])
     #print(firstDiagonal, secondDiagonal)    
     return abs(firstDiagonal - secondDiagonal)    
