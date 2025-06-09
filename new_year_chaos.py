@@ -1,4 +1,5 @@
 def minimumBribes(q):
+    
     bribes = 0
     reference_array = list(range(1, n+1))
     
