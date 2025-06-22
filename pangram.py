@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import math
 import os
 import random
@@ -8,8 +6,9 @@ import sys
 
 
 def pangrams(s):
-    # create a dictionary of the letters in input string
+    # Create a dictionary of the letters in the input string
     dict = []
+    
     for char in s:
         if char.lower() not in dict and char.lower() != ' ':
             dict.append(char.lower())
