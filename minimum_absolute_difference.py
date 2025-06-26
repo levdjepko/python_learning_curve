@@ -1,4 +1,7 @@
 def minimumAbsoluteDifference(arr):
+    '''
+    find the minimum difference between any two elements of the array
+    '''
     arr.sort() 
     min_diff = arr[len(arr) - 1] - arr[0]
     for i in range(len(arr) - 1):
