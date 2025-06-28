@@ -21,7 +21,7 @@ def breakingRecords(scores):
             max_count += 1
             max_score = scores[i]
         elif scores[i] < min_score:
-            # new low record
+            # New Low record
             min_count += 1
             min_score = scores[i]
     return [max_count, min_count]       
