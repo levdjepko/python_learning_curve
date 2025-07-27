@@ -3,5 +3,6 @@ Currently started a Path of Professional Machine Learning Engineer in Google Clo
 Started learning this Path with Google.
 Current progress:
 1. Finished the first introductory course in this path (01 A Tour of Google Cloud Hands-on Labs)
-2. Started 02 Google Cloud Fundamentals: Core Infrastructure: 55% done
+2. Started 02 Google Cloud Fundamentals: Core Infrastructure: 57% done
+3. Working on Pluralsight course on the same topic (Associate Cloud Engineer)
 I
