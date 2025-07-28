@@ -6,3 +6,4 @@ same default items, just select the "auto-populate"
 - Project Name is the only thing that can be changed. The project ID is unique and assigned
 - Basic Roles and Predefined Roles: Basic roles are quite broad, and it is better to use the predefined ones or create custom ones if needed
 - Assign permissions to groups and not individual users
+- Storage options include both SQL and NoSQL solutions. Cloud Storage is used to store blobs
