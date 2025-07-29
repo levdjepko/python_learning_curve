@@ -1,6 +1,6 @@
 def balancedSums(arr):
     
-    # Find an element in the array such that the sum of elements to the left and the right equals
+    # Find an element in the array such that the sum of elements to the left and the right of it is the same
     # If that's the case, return 'yes', otherwise 'no'
     
     sum_of_all_elements = sum(arr)
