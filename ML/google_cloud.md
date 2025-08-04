@@ -6,4 +6,5 @@ same default items, just select the "auto-populate"
 - Project Name is the only thing that can be changed. The project ID is unique and assigned
 - Basic Roles and Predefined Roles: Basic roles are quite broad, and it is better to use the predefined ones or create custom ones if needed
 - Assign permissions to groups and not individual users
-- Storage options include both SQL and NoSQL solutions. Cloud Storage is used to store blobs. BigQuery is a modern solution for data warehousing. It supports historical data queerying
+- Storage options include both SQL and NoSQL solutions. Cloud Storage is used to store blobs. BigQuery is a modern solution for data warehousing. It supports historical data querying
+- Big Table is a solution for NoSQL storage - it supports heavy analytics but does not support SQL; Firestore is a solution for storing smaller files - it supports offline caching and updates
