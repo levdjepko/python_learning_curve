@@ -8,3 +8,4 @@ same default items, just select the "auto-populate"
 - Assign permissions to groups and not individual users
 - Storage options include both SQL and NoSQL solutions. Cloud Storage is used to store blobs. BigQuery is a modern solution for data warehousing. It supports historical data querying
 - Big Table is a solution for NoSQL storage - it supports heavy analytics but does not support SQL; Firestore is a solution for storing smaller files - it supports offline caching and updates
+- In the lab, I created the VM instance, the MySQL instance, a user to access this DB, and a cloud storage
