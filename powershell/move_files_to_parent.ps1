@@ -21,3 +21,14 @@ foreach ($subFolder in $subFolders) {
 }
 
 Write-Host "Finished moving files."
+
+# HERE's THE VERSION THAT IGNORES THE FILE NAMES, just moved them all into a single directory
+# It is useful for cases when you want to get rid of a bunch of folders, like from a digital camera
+# Specify the parent directory
+
+$parentFolder = "main"
+
+# Get all files from all subdirectories and move them to the parent directory
+Get-ChildItem -Path $parentFolder -Recurse -File | Move-Item -Destination $parentFolder -Force
+
+Write-Host "Finished moving files."
