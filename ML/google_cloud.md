@@ -43,3 +43,18 @@ use these to make calls to and from the apps (HTTP, JSON, gRPC)
 
 Cloud Shell and SDK:
 Cloud Shell is available as an add-on for many IDEs
+Cloud Shell provides a temporary, simple VM, Google Cloud SDK comes pre-installed and with permissions to use your cloud resources.
+Cloud Code is an integration into popular IDEs, integrates with Secret Manager. It also allows working with GKE within IDE
+
+STORAGE:
+Cloud Storage - 5tb- files for unstructured data
+Firestore - NoSQL database that scales, for mobile and web apps
+BigTable - NoSQL database to store sparsely populated data, for big data and analytics, ideal for MapReduce
+Cloud SQL - RDBMS, structured data, just like a typical DB
+AlloyDB - PostgreSQL for high-performance applications, it is faster than standard PostgreSQL
+Spanner - fully-managed SQL database, designed for OLTP, high availability, and global and multi-region replication, very high uptime
+BigQuery - used for ML, GIS, and BI. Fast, designed for analytics (OLAP), has Memorystore that works with Redis and Memcached
+use these to make calls to and from the apps (HTTP, JSON, gRPC)
+
+Cloud Shell and SDK:
+Cloud Shell is available as an add-on for many IDEs
