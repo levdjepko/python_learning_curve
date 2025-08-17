@@ -58,3 +58,11 @@ use these to make calls to and from the apps (HTTP, JSON, gRPC)
 
 Cloud Shell and SDK:
 Cloud Shell is available as an add-on for many IDEs
+
+Authentication and Authorization
+Google Cloud AIM is serving the auth. purposes.
+IAM Authorization allows granular control over access to the resources.
+Roles are where we assign the permissions to the resources.
+There are three types of roles: Basic (not recommended - too broad), Predefined - granular access, and Custom - used when predefined are too broad.
+Authentication proves who you are: API keys (rarely used), Oauth keys, and Service accounts (preferred)
+
