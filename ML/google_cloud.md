@@ -13,7 +13,6 @@ same default items, just select the "auto-populate"
 Google Cloud
 
 
-
 Kubernetes:
 GKE is an orchestration platform for containers. The smallest piece is called a "Pod". A Cluster contains one or more pods + control plane to control them. Service groups contains several Pods with stable IP addresses. "kubectl" command is related to Kubernetes, like "kubectl scale". The deployment config file (.yaml) can be used to declaratively create infrastructure
 
