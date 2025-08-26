@@ -1,10 +1,10 @@
 # python_learning_curve
 
-It is just a place to keep some interesting Python code and functions :)
+It is a place to keep some interesting Python code and functions :)
 
-A lot of the code here is from Hackerrank or Leetcode
+A lot of the code here is from HackerRank or LeetCode
 
-I also put in some stuff to work with APIs using Python, Pandas, etc.
+I also added some stuff to work with APIs using Python, Pandas, etc.
 
 Some of the stuff is from freecodecamp.org - I have been a supporter for the last three years :)
 
