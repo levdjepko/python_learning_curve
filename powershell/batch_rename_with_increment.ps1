@@ -15,14 +15,13 @@ Get-ChildItem -File | ForEach-Object {
 
     # --- Step 1: Rename the file in the current directory ---
     # NOTE: Add error handling here if needed in your actual use case
-    
     Rename-Item -Path $_.FullName -NewName $newName -WhatIf
 
     # --- Step 2: Move the *renamed* file to the 'done' directory ---
     # This assumes Rename-Item succeeded. We target the $newName in the current directory.
     # CAVEAT with -WhatIf: Since Rename-Item -WhatIf doesn't *actually* rename,
     # the file named $newName won't exist yet. The 'What if' for Move-Item
-    # below might show an error or target a non-existent file during simulation.
+    # The code below may display an error or target a non-existent file during simulation.
     # Test by removing -WhatIf from Rename-Item first OR remove both to run for real.
     Move-Item -Path $newName -Destination $doneDir -WhatIf
 }
