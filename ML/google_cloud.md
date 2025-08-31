@@ -14,7 +14,7 @@ Google Cloud
 
 
 Kubernetes:
-GKE is an orchestration platform for containers. The smallest piece is called a "Pod". A Cluster contains one or more pods + control plane to control them. Service groups contains several Pods with stable IP addresses. "kubectl" command is related to Kubernetes, like "kubectl scale". The deployment config file (.yaml) can be used to declaratively create infrastructure
+GKE is an orchestration platform for containers. The smallest piece is called a "Pod". A Cluster contains one or more pods + control plane to control them. Service groups contain several Pods with stable IP addresses. The "kubectl" command is related to Kubernetes, like "kubectl scale". The deployment config file (.yaml) can be used to create infrastructure declaratively
 
 GKE:
 Google Kubernetes Service is an orchestration framework for Kubernetes.
