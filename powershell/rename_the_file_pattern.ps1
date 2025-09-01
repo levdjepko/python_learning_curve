@@ -1,10 +1,9 @@
 <#
-.SYNOPSIS
+
 Renames files in the current directory based on a specific pattern.
 It replaces the part of the filename before the last underscore with a fixed prefix,
 while keeping the part after the previous underscore.
 
-.DESCRIPTION
 This script iterates through files in the current directory. For each file, it finds
 the last underscore in the filename. If found, it constructs a new filename consisting
 of the predefined prefix "SH ID_ Title_SH Controller Date_" followed by the original
