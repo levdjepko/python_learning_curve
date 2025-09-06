@@ -23,6 +23,7 @@ class Company:
 
 
 def main():
+    # initialize the Company object
     my_company = Company()
     # Set salaries
     employee1 = Employee('Sarah', 'Hess', 50000)
