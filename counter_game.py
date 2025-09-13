@@ -7,7 +7,7 @@ def is_power_of_two(n):
     
 def counterGame(n):
     # We have to subtract the next lowest power of 2
-    # and then we get to a point where the number is reduced to 1 by dividing it by 2
+    # and then we get to a point where the number is reduced to 1 by dividing it by 2:
     moves = 0
     while n != 1:
         exponent = math.log2(n)
