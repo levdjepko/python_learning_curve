@@ -6,10 +6,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'birthdayCakeCandles' function below.
-#
-
 
 def birthdayCakeCandles(candles):
     # Write your code here
