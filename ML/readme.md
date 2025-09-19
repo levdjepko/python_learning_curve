@@ -9,4 +9,4 @@ Current progress:
 5. Added the Big Data learning into the mix for August
 6. Started the GDG Group Lawrence Professional Cloud Engineer learning group. It will last for 12 weeks, with 12 badges to obtain. Maybe it will be doable this time around?
    - Participated in the first two sessions in the GDG. Even won something in a raffle in the session 08/20/2025 :)
-7. Working on Pluralsight Course path on the same topic 
+7. Working on Pluralsight Course path on the same topic - first class 40% done
