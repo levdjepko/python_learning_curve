@@ -1,4 +1,4 @@
-#  Definition of a Class
+#  Define the Class
 class Dog:
     def __init__(self, name, breed, color):
         self.name = name
