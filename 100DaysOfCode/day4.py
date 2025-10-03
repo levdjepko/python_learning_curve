@@ -1,6 +1,6 @@
 import random
 
-computer_choice =random.choice(['scissors', 'rock', 'paper'])
+computer_choice = random.choice(['scissors', 'rock', 'paper'])
 user_choice = input('Select: rock, paper, or scissors?\n')
 
 
@@ -33,7 +33,6 @@ scissors = '''
 
 
 if (computer_choice == user_choice):
-
     print ('Computer picks: ' + computer_choice)
     print ('Tie')
 elif ((user_choice == 'rock' and computer_choice == 'scissors') or
