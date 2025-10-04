@@ -1,5 +1,5 @@
 # This is a password checker app
-# Its length is at least 6
+# The password length is at least 6
 # It contains at least one digit.
 # It contains at least one lowercase English character.
 # It contains at least one uppercase English character.
