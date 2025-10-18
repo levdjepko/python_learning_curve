@@ -5,10 +5,10 @@ import random
 import re
 import sys
 
-def timeConversion(s):
+def time_сonversion(s):
     
     # format the string
-    # from AM/PM format to military time
+    # from AM/PM format to military time (24H)
     hour=int(s[:2])
     timeOfDay=s[8:]    
         
