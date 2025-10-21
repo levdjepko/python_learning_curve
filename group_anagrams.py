@@ -1,5 +1,6 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # process the strings
         results = defaultdict(list)
 
         for string in strs:
