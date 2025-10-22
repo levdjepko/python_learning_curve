@@ -13,8 +13,8 @@ def generate_grad_years_string():
     else:
         grad_years = [f"{currentYear}-{nextYear}", f"{nextYear}-{nextYear + 1}",
                         f"{nextYear + 1}-{nextYear + 2}", f"{nextYear + 2}-{nextYear + 3}"]
-
     grad_years = str(grad_years).replace('[', '').replace(']', '')
+    
     return grad_years
   
 grad_years = generate_grad_years_string()
