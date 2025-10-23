@@ -1,4 +1,5 @@
 def missingNumbers(arr, brr):
+    # return the nnumbers missing in one of the arrays
     missing_items = []
     arr.sort()
     brr.sort()    
