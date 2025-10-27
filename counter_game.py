@@ -1,8 +1,10 @@
 def is_power_of_two(n):
+    '''
     # Check if the number is 0 to begin with
     # if not, then check that bitwise & is exactly 0
     # because any power of 2 has exactly one 1 in binary representation, and ...
     # same number -1 is all 1's, but the set bit
+    '''
     return (n != 0) and (n & (n-1) == 0)
     
 def counterGame(n):
