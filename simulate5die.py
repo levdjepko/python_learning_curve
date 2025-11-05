@@ -6,7 +6,7 @@ def rand7():
 
 
 def rand5():
-    # implement function Random-5 or simulate a 5-sided die using existing 7-sized die
+    # implement function Random-5 or simulate a 5-sided die using an existing 7-sided die
     #
     result = rand7()
     
