@@ -3,8 +3,7 @@ class Solution:
         currentPointer = 1       
         for i in range (1, len(nums)):
             # iterate from 1 to the end, and check all the numbers, comparing them to previous ones
-            if (nums[i] != nums[i-1]):
-                #new number
+            if (nums[i] != nums[i-1]):                
                 nums[currentPointer] = nums[i]
                 currentPointer += 1
         return currentPointer        
