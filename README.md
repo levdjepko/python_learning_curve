@@ -2,7 +2,7 @@
 
 It is a place to keep some interesting Python code and functions :)
 
-A lot of the code here is from HackerRank or LeetCode
+A lot of the code here is from HackerRank or LeetCode.
 
 I also added some stuff to work with APIs using Python, Pandas, etc.
 
@@ -12,4 +12,3 @@ Many tasks are solved puzzles from https://www.hackerrank.com/interview/preparat
 
 Also, some of the items are from Amazon-like lists from Leetcode
 
-A few solutions were following neetcode
