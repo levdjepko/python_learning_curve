@@ -1,6 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        # implement a rolling window to track the lowest and highest item so far
+        # let's implement a rolling window to track the lowest and highest item so far
         # then, go over the entire list in one pass and get the difference
         # O(n) time complexity, O(n) space complexity
         buy_price = prices[0]
