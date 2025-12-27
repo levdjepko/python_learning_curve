@@ -6,9 +6,10 @@ import sys
 
 def closestNumbers(arr):
     arr.sort()
-    # assume the first difference to be the smallest one, then iterate over the array
+    # assume the first difference is the smallest one, then iterate over the array
     smallest_diff = arr[1] - arr[0]
     new_array = []
+    # compare the differences between the elements
     for i in range(len(arr) - 1):
         if arr[i + 1] - arr[i] < smallest_diff:
             smallest_diff = arr[i + 1] - arr[i]
