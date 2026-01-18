@@ -13,7 +13,7 @@ import sys
 
 def diagonalDifference(arr):
     firstDiagonal = secondDiagonal = 0    
-    #print(arr)
+    
     for i in range(len(arr)):
         firstDiagonal += arr[i][i]
         #print("First:", arr[i][i])
