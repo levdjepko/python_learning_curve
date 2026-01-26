@@ -15,7 +15,7 @@ class Solution:
                     return False
             else:
                 return False        
-        # if at this point we pushed and popped each character in the correct order, the string is a valid code
+        # if at this point we pushed and popped each character in the correct order, the string is a valid code - with all the parentheses matching
         if len(stack) == 0:
             return True
         return False                
